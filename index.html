@@ -4,11 +4,21 @@
         <title>Lab 2</title>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
         <link rel="icon" href="./images/logo.png" >
+        <style>
+            main{
+                font-family: "Sofia", sans-serif;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-content: space-between;
+            }
+        </style>
     </head>
     <body>
         <main>
-            <header>
+            <header  class="background">
                 <h1>Chargers Meeting</h1>
                 <h2>October 3, 2021</h2>
                 <nav>
@@ -24,20 +34,20 @@
 
             <hr>
 
-            <section id="attendees" class="background">
+            <section id="attendees" class="titles">
                 <h2>Attendees</h2>
                 <ol>
-                    <li style="color:rgb(255,0,0)">Kai</li>
-                    <li style="color:orange">Bisk</li>
-                    <li style="color:#FFFF00">Nigo</li>
-                    <li style="color:hsl(91, 50%, 39%)">NagelBagel</li>
-                    <li>Sammy</li>
+                    <li class = "item" style="color:rgb(255,0,0)">Kai</li>
+                    <li class = "item" style="color:orange">Bisk</li>
+                    <li class = "item" style="color:#FFFF00">Nigo</li>
+                    <li class = "item" style="color:hsl(91, 50%, 39%)">NagelBagel</li>
+                    <li class = "item" >Sammy</li>
                 </ol>
             </section>
 
             <hr>
 
-            <section id="agenda">
+            <section id="agenda" class="titles">
                 <h2>Agenda</h2>
                 <p><strong>Number 1:</strong>Get <em>everyone</em> on track about the previous meeting agenda points.
                 <br>
