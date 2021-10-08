@@ -1,3 +1,36 @@
 .background{
     background-color: skyblue;
 }
+
+.titles{
+    display: inline;
+    margin-top: 5px;
+    margin-bottom: 5vh;
+    position: relative;
+    border-style: solid;
+    border-bottom-color: black;
+    border-top-color: black;
+    border-left-color: white;
+    border-right-color: white;
+    border-width: 5px;
+    border-radius: 1vh;
+    padding-left: 30px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.item:hover{
+    cursor: pointer;
+}
+
+h1{
+    position: absolute;
+    margin-left: 80vh;
+    color: darkblue;
+    text-decoration: darkorchid;
+    text-align: center;
+}
+h1:active{
+    color:red;
+}
