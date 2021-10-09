@@ -2,6 +2,7 @@
     background-color: skyblue;
 }
 
+/*for headers of lines*/
 .titles{
     display: inline;
     margin-top: 5px;
@@ -20,6 +21,7 @@
     padding-bottom: 10px;
 }
 
+/*for the business lines*/
 .business{
     margin: 3px 5px 3px 5px;
     border-color: red blue red blue;
@@ -29,10 +31,19 @@
     padding: 10px 15px 10px 15px;
 }
 
+#unfinished-business{
+    color: purple;
+}
+
 .item:hover{
     cursor: pointer;
 }
 
+a[href*="e"] {
+    color: black;
+}
+
+/*for the title*/
 h1{
     position: absolute;
     margin-left: 80vh;
@@ -47,4 +58,72 @@ h1:active{
 
 ol{
     margin: auto;
+}
+
+.diagram .images{
+    margin-left: 20px;
+}
+
+.image > .images{
+    margin-left: 20px;
+}
+
+h2 ~ div{
+    margin-top: 5vh;
+}
+
+h2 + div {
+    color: red;
+}
+
+
+
+.grid{
+    display: grid;
+    grid-template-rows: 18% 60% 18%;
+    row-gap: 2%;
+    justify-content: center;
+    align-items: center;
+}
+
+.item1, .item2, .item3{
+    grid-row-start:2;
+    grid-row-end:2;
+}
+
+.item1{
+    grid-column-start:1;
+    grid-column-end: 1;
+}
+
+.item2{
+    grid-column-start:2;
+    grid-column-end: 2;
+}
+
+.item3{
+    grid-column-start:3;
+    grid-column-end: 3;
+}
+
+.images{
+    height: 60vh;
+    width: 60vw;
+    max-width: 400px;
+    max-height: 400px;
+}
+
+form.item2{
+    background-color: skyblue;
+}
+
+@media (max-width: 400px) {
+    body{
+        background-color: black;
+        color:white;
+    }
+}
+
+*{
+    overflow-x: hidden;
 }
